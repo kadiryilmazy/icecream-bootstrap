@@ -25,6 +25,7 @@
         <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
     </head>
     <body>
+        <!-- NAVBAR-->
         <header class="header">
             <nav class="navbar navbar-expand-lg bg-light shadow-sm">
                 <div class="container-fluid">
@@ -71,6 +72,52 @@
                 </div>
             </nav>
         </header>
+        <!--SLIDER-->
+        <section class="banner-sec">
+            <div class="slider-area">
+                <div class="slider">
+                    <div class="slide">
+                        <img src="./images/main-banner-1.jpg" />
+
+                        <div class="slide-content">
+                            <h6>Best For Your Pets</h6>
+                            <h1>Healthy & Tasty Pet Food</h1>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi corporis fugiat nulla dolorum eaque quo excepturi dignissimos quis voluptatem alias explicabo non
+                                reprehenderit odit, cum ratione temporibus doloribus nesciunt placeat?
+                            </p>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <img src="./images/main-banner-1.jpg" />
+
+                        <div class="slide-content">
+                            <h6>Special Offer</h6>
+                            <h1>Get 30% Off On Trees</h1>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi corporis fugiat nulla dolorum eaque quo excepturi dignissimos quis voluptatem alias explicabo non
+                                reprehenderit odit, cum ratione temporibus doloribus nesciunt placeat?
+                            </p>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <img src="./images/main-banner-1.jpg" />
+
+                        <div class="slide-content">
+                            <h6>Special Offer</h6>
+                            <h1>Premium Quality</h1>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi corporis fugiat nulla dolorum eaque quo excepturi dignissimos quis voluptatem alias explicabo non
+                                reprehenderit odit, cum ratione temporibus doloribus nesciunt placeat?
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--ABOUT SECTION-->
+
+        <!-----------------------------------------------------JAVASCRIPT----------------------------------------------->
         <!--JQUERY JS IMPORT-->
         <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
 
@@ -84,5 +131,18 @@
         ></script>
         <!--SLICK JS IMPORT-->
         <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+        <script>
+            $(".slider").slick({
+                infinite: true,
+                speed: 300,
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                speed: 500,
+                arrows: true,
+                autoplaySpeed: 3000,
+                prevArrow: '<button class="slick-prev" a><i class="fa-solid fa-chevron-left"></i></button>',
+                nextArrow: '<button class="slick-next" a><i class="fa-solid fa-chevron-right"></i></button>',
+            });
+        </script>
     </body>
 </html>
